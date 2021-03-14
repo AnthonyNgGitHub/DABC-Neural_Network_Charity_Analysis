@@ -34,7 +34,7 @@ Below screenshot shows the metadata.
 
 ### Compiling, Training, and Evaluating the Model:
 
-- Once the data has been preprocessed, the neural netowrk model is ready to be compiled and trained. Two hidden layers were used for this model, ending with an output layer with one node to predict successful/not successful. The first hidden layer has 80 neurons, which is based on the standard rule-of-thumb practices to use 2 to 3 times of input features on the first layer. Aa 2nd layer was included to expand the model's capacity to handle the complexity of the input data, which has 43 input features. Both layers were using the "ReLu" activiation function as the model is using positive non-linear input data for classification.
+- Once the data has been preprocessed, the neural netowrk model is ready to be compiled and trained. Two hidden layers were used for this model, ending with an output layer with one node to predict successful/not successful. The first hidden layer has 80 neurons, which is based on the standard rule-of-thumb practice to use 2 to 3 times of input features on the first layer. A 2nd layer was included to expand the model's capacity to handle the complexity of the input data, which has 43 input features. Both layers were using the "ReLu" activiation function as the model is using positive non-linear input data for classification.
 
 
 <img src="images/5.define_model.PNG"></img>
@@ -43,7 +43,7 @@ Below screenshot shows the metadata.
 
 <img src="images/6.model_accuracy_v0.PNG"></img>
 
-- Attempts were made to improve the accuracy of the model, including (1) Increaseing the number of neurons on the first layer to 120, (2) adding a 3rd hidden layer with 10 neurons, and (3) increasing the number of epochs from 100 to 200. However, as shown in below screenshots, the optimization attempts were not successful. Only modification (1) was able to increase the accuracy by ~1%.
+- Attempts were made to improve the accuracy of the model, including (1) Increasing the number of neurons on the first layer to 120, (2) adding a 3rd hidden layer with 10 neurons, and (3) increasing the number of epochs from 100 to 200. However, as shown in below screenshots, the optimization attempts were not successful. Only modification (1) was able to increase the accuracy by ~1%.
 
 <img src="images/6.model_accuracy_v1.PNG"></img>
 
@@ -53,6 +53,6 @@ Below screenshot shows the metadata.
 
 ### Summary:
 
-Overall, the higher achievable accuracy from the deep learning model appears to be limited at ~70%. Besides the above mentioned modifications, attempts were made to remove certain features deemed unnecessary (e.g. STATUS, SPECIAL_CONSIDERATION), changing the number neurons in each layer, and changing the activation used on each layer. However, the model's accuracy did not improve. However, a deep learning Neural Netowrk model is not the only option on the table. We could also use a Random Forest Machine Learning Model to perform this classification. By combining a number of weak learner decision trees to come to a concensus classification, Random Forest is a able to prdouce robust and accurate results. Since input data is tabular, Random Forest is an ideal alternative model to use.
+Overall, the highest achievable accuracy from the deep learning model appears to be limited at ~70%. Besides the above mentioned modifications, attempts were made to remove certain features deemed unnecessary (e.g. STATUS, SPECIAL_CONSIDERATION), changing the number neurons in each layer, and changing the activation used on each layer. However, the model's accuracy did not improve. However, a deep learning Neural Netowrk model is not the only option on the table. We could also use a Random Forest Machine Learning Model to perform this classification. By combining a number of weak learner decision trees to come to a concensus classification, Random Forest is able to produce robust and accurate results. Since input data is tabular, Random Forest is an ideal alternative model to use.
 
 
