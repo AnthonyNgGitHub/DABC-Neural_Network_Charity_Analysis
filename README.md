@@ -34,7 +34,7 @@ Below screenshot shows the metadata.
 
 ### Compiling, Training, and Evaluating the Model:
 
-- Once the data has been preprocessed, the neural netowrk model is ready to be compiled and trained. 2 hidden layers were used for this model, ending with an output layer with one node to predict successful/not successful. The first hidden layer has 80 neurons, which is based on the standard rule-of-thumb practices to use 2 to 3 times of input features on the first layer. Aa 2nd layer was included to expand the model's capacity to handle the complexity of the input data, which has 43 input features. Both layers were using the "ReLu" activiation function as the model is using positive non-linear input data for classification.
+- Once the data has been preprocessed, the neural netowrk model is ready to be compiled and trained. Two hidden layers were used for this model, ending with an output layer with one node to predict successful/not successful. The first hidden layer has 80 neurons, which is based on the standard rule-of-thumb practices to use 2 to 3 times of input features on the first layer. Aa 2nd layer was included to expand the model's capacity to handle the complexity of the input data, which has 43 input features. Both layers were using the "ReLu" activiation function as the model is using positive non-linear input data for classification.
 
 
 <img src="images/5.define_model.PNG"></img>
