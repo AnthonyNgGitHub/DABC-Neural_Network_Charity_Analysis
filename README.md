@@ -21,7 +21,7 @@ Below screenshot shows the metadata.
 
 - Identiification columns (EIN and NAME) are neither targets nor features, and should be removed from the input data since they do not provide any value in training and predicting whether or not a donation would be successful. Logically, a donation's success or failure should depend on factors other than the name and ID of the organization.
 
-- The remaining columns are features considered as for the model, which include: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATION, and ASK_AMT
+- The remaining columns are features considered for the model, which include: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATION, and ASK_AMT
 
 - Further preprocessing was performed on the feature columns: APPLICATION_TYPE and CLASSIFICATION were binned and all categorigcal features were encoded into nummerical values by using OneHotEncoder, as shown in below screenshots.
 
