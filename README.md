@@ -17,7 +17,7 @@ Below screenshot shows the metadata.
 
 ### Data Preprocessing:
 
-- Since our model is designed to ake binary predictions of whether or not a donation would be successful, the "IS_SUCCESSFUL" column is our target variable.
+- Since our model is designed to make binary predictions of whether or not a donation would be successful, the "IS_SUCCESSFUL" column is our target variable.
 
 - Identiification columns (EIN and NAME) are neither targets nor features, and should be removed from the input data since they do not provide any value in training and predicting whether or not a donation would be successful. Logically, a donation's success or failure should depend on factors other than the name and ID of the organization.
 
